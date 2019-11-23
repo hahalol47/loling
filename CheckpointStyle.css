@@ -1,0 +1,545 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: rgb(30, 30, 110);
+    scroll-behavior: smooth;
+  }
+
+  .home {
+    position: relative;
+    bottom: 100px;
+  }
+  
+
+  nav {
+    overflow: hidden;
+    z-index: 100000;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: -10px 0;
+    box-shadow: 0px 5px 0px #dedede;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin: 0 30px;
+    font-size: 38px;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+}
+
+ nav ul li a:hover {
+        color: #555;
+      }
+
+      nav.stroke ul li a,
+      nav.fill ul li a {
+        position: relative;
+      }
+      nav.stroke ul li a:after,
+      nav.fill ul li a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #aaa;
+        height: 5px;
+      }
+      
+      nav.stroke ul li a:hover:after {
+        width: 100%;
+      }
+      
+      .logo {
+          height: 100px;
+      }
+
+      fieldset {
+        border: 1px solid #000;
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+    }
+
+    .box {
+        width: 600px;
+        background: linear-gradient(135deg, rgb(30, 30, 110), rgb(30, 30, 110) 20%, white);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        line-height: 25px;
+        border-color: white;
+        transition: transform .7s, border-radius .7s;
+        position: relative;
+        top: 88px;
+        left: 50px;
+
+    }
+
+    .box:hover {
+        transform: scale(1.1);
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 60px;
+    }
+
+    .legend {
+        font-size: 35px;
+    }
+
+    .star_img{
+        width: 300px;
+        float: right;
+        position: relative;
+        top: -250px;
+        right: 250px;
+        transition: transform 0.8s;
+    }
+
+    .star_img:hover {
+        transform: scale(1.3);
+    }
+
+    .about {
+      position: relative;
+      bottom: 800px;
+    }
+
+    .parallax {
+      background-image: url("../assets/Parallax.png");
+      background-attachment: fixed;
+      height: 600px;
+      width:100%;
+      display:flex;
+      justify-content: space-around;
+      padding-top:100px;
+    }
+
+    .content1 {
+
+      height: 450px;
+      position: relative;
+      width: 300px;
+      background: rgb(97, 113, 255);
+      line-height: 25px;
+      border-color: white;
+      transition: transform .7s, border-radius .7s;
+      border-radius: 20px;
+      border-width: 2px;
+      border-style: solid;
+      opacity: 0.8;
+      text-align: center;
+      vertical-align: middle;
+      padding-bottom: 50px;
+    }
+
+    .content1:hover {
+      transform: scale(1.1);
+      border-radius: 50px;
+    }
+
+    .content2 {
+      position: relative;
+
+      width: 300px;
+      background: rgb(97, 113, 255);
+
+      height: 450px;
+      transition: transform .7s, border-radius .7s;
+      border-radius: 20px;
+      border-color: white;
+      border-width: 2px;
+      border-style: solid;
+      opacity: 0.8;
+      line-height: 25px;
+      text-align: center;
+      vertical-align: middle;
+      padding-bottom: 50px;
+    }
+
+    .content2:hover {
+    transform: scale(1.1);
+    border-radius: 50px;
+    }
+
+    .content3 {
+      position: relative;
+      width: 300px;
+      background: rgb(97, 113, 255);
+      border-color: white;
+
+      height: 450px;
+      transition: transform .7s, border-radius .7s;
+      border-radius: 20px;
+      border-width: 2px;
+      border-style: solid;
+      opacity: 0.8;
+      line-height: 25px;
+      text-align: center;
+      vertical-align: middle;
+      padding-bottom: 50px;
+    }
+
+    .content3:hover {
+      transform: scale(1.1);
+      border-radius: 50px;
+    }
+
+  .hr1 {
+    position: relative;
+    top: 50px;
+  }
+
+  .hr2 {
+    position: relative;
+    top: 50px;
+  }
+
+  .hr3 {
+    position: relative;
+    top: 50px;
+  }
+
+  .littlebox {
+    position: relative;
+    top: 60px;
+    transition: transform .7s;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 200px;
+    left: 45px;
+    background-color: rgb(247, 69, 38);
+  }
+
+  .littlebox:hover {
+      transform: scale(1.1);
+  }
+
+  .link {
+    text-decoration: none;
+    -webkit-transition: color 1s;
+  }
+
+  .link:hover {
+    color: red;
+  }
+
+  .subscribelogo1 {
+    position: relative;
+    width: 100px;
+    height: auto;
+    left: -3px;
+    top: 65px;
+    transition: 1s;
+  }
+
+  .subscribelogo1:hover {
+    transform: rotateY(180deg);
+  }
+
+  .subscribelogo2 {
+    position: relative;
+    width: 100px;
+    height: auto;
+    left: -3px;
+    top: 65px;
+    transition: 1s;
+  }
+
+  .subscribelogo2:hover {
+    transform: rotateY(180deg);
+  }
+
+  .subscribelogo3 {
+    position: relative;
+    width: 100px;
+    height: auto;
+    left: -3px;
+    top: 65px;
+    transition: 1s;
+  }
+
+  .subscribelogo3:hover {
+    transform: rotateY(180deg);
+  }
+
+  .gallery {
+    position: relative;
+    bottom: 175px;
+    z-index:3;
+    margin-top: 20px;
+  }
+  
+
+.gallery__img1 {
+  width: auto;
+  height: 300px;
+  position: relative;
+  grid-area : a;
+
+  
+}
+
+.gallery__img2 {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  grid-area : b;
+
+}
+
+
+.gallery__img4 {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  grid-area : c;
+
+
+}
+
+.gallery__img5 {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  grid-area : d;
+
+}
+
+.gallery__img6 {
+  width: auto;
+  height: 260px;
+  position: relative;
+  grid-area : e;
+
+}
+
+.gallery2 {
+  position: relative;
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns : "1fr 1fr 1fr 1fr";
+  grid-template-rows : "1fr 1fr";
+  grid-template-areas : "a b b b" 
+                        "c c d e";
+  
+}
+
+.feedback {
+  position: relative;
+  top: -120px;
+}
+
+.fieldset1 {
+  border: 1px solid #000;
+}
+
+.box2 {
+  position: relative;
+  width: 600px;
+  height: 530px;
+  background-color: rgb(30, 30, 110);;
+  border-radius: 20px;
+  line-height: 25px;
+  border-color: white;
+  transition: border-radius 1.2s;
+  display:flex;
+  justify-content: center;
+}
+
+.box2:hover {
+  border-radius: 40px;
+}
+
+.feedbacklegend {
+  font-size: 50px;
+}
+
+input, label {
+  display:block;
+}
+
+
+.message {
+  position: relative;
+
+
+}
+
+.subject {
+  position: relative;
+
+}
+
+.email {
+  position: relative;
+
+}
+
+.name {
+  position: relative;
+
+}
+
+.nameInput {
+  width: 400px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(97, 113, 255);
+  outline:none;
+}
+
+.emailInput {
+  width: 400px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(97, 113, 255);
+  outline:none;
+}
+
+.subjectInput {
+  width: 400px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(97, 113, 255);
+  outline:none;
+}
+
+.textarea {
+  background-color: rgb(97, 113, 255);
+  border-radius: 20px;
+  outline:none;
+}
+
+.submitbox {
+  position: relative;
+
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  transition: transform .7s, border-radius .7s;
+}
+
+.button:hover {
+  border-radius: 24px;
+  transform: scale(1.2);
+}
+
+.feedbackbox {
+  position: relative;
+  top: 100px;
+  width: 500px;
+  height: auto;
+  position: relative;
+  left: 500px;
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: transform .7s, border-radius .7s;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+}
+
+.feedbackbox:hover {
+  transform: scale(1.02);
+  border-radius: 30px;
+}
+
+.firstname {
+  border-radius: 20px;
+  outline: none;
+  width: 400px;
+  height: 20px;
+}
+
+.lastname {
+  border-radius: 20px;
+  outline: none;
+  width: 400px;
+  height: 20px;
+}
+
+.email {
+  border-radius: 20px;
+  outline: none;
+  width: 400px;
+  height: 20px;
+}
+
+.message {
+  border-radius: 20px;
+  outline: none;
+  width: 400px;
+  height: 60px;
+}
+
+.Bigfirst {
+  position: relative;
+  left: 20px;
+}
+
+.Biglast {
+  position: relative;
+  left: 20px;
+}
+
+.Bigemail {
+  position: relative;
+  left: 20px;
+}
+
+.Bigmessage {
+  position: relative;
+  left: 20px;
+}
+
+.Bigbutton {
+  position: relative;
+  left: 200px;
+}
+
+.abyss {
+  position: relative;
+  top: 182px;
+}
