@@ -1,0 +1,43 @@
+.title {
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.subtitle1 {
+    background-color: green;
+    text-align: center;
+}
+
+.subtitle2 {
+    background-color: green;
+    text-align: center;
+}
+
+.subtitle3 {
+    background-color: green;
+    text-align: center;
+}
+
+.courses {
+    background-color: blue;
+    height: 300px;
+}
+
+.articles {
+    background-color: red;
+    height: 300px;
+}
+
+.skills {
+    background-color: yellow;
+    height: 300px;
+}
+
+.sub {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
